@@ -1,13 +1,33 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HomeContainer } from './containers/HomeContainer';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import { VoteContainer } from './containers/VoteContainer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route path="home" element={<HomeContainer />} />
+          <Route path="vote" element={<VoteContainer />} />
+        </Route>
+        <Route
+          path="*"
+          element={
+            <main style={{ padding: "1rem" }}>
+              <p>There's nothing here!</p>
+            </main>
+          }
+        />
+      </Routes>
+
+    </Router>
   </React.StrictMode>
 );
 
