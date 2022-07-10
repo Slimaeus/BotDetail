@@ -32,7 +32,7 @@ export const NavBarContainer = (props) => {
         setClickedMenu(prev => !prev)
     }
     const handleHover = (e) => {
-        setTabs([...tabs, { name: "Secret zone", link: "secret"}])
+        setTabs([...tabs, { name: "o_O", link: "secret"}])
     }
     const handleOut = (e) => {
         setTabs(tabs.filter(e => e.link !== "secret" ))
