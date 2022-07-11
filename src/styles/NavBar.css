@@ -7,7 +7,7 @@
 }
 
 .nav-bar {
-  margin: -10px
+  margin: -10px;
 }
 .nav-bar li {
   float: left;
@@ -29,14 +29,10 @@
   background: #ddd;
   color: black;
 }
-
-#logo {
-  width: 88px;
-  padding: 0px 20px;
+.navbar-logo {
+  padding: 0 10px
 }
-#logo:hover {
-  background-color: white;
-  border-radius: 10px;
-  width: 40px ;
-  transition: ease 0.2s ;
+#logo {
+  width: 60px;
+  border-radius: 50%;
 }
