@@ -16,15 +16,15 @@ root.render(
         <Route path="/" element={<App />}>
           <Route path="home" element={<HomeContainer />} />
           <Route path="vote" element={<VoteContainer />} />
+          <Route
+            path="*"
+            element={
+              <main style={{ padding: "1rem" }}>
+                <p>There's nothing here!</p>
+              </main>
+            }
+          />
         </Route>
-        <Route
-          path="*"
-          element={
-            <main style={{ padding: "1rem" }}>
-              <p>There's nothing here!</p>
-            </main>
-          }
-        />
       </Routes>
 
     </Router>
