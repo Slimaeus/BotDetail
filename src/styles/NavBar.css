@@ -7,14 +7,14 @@
 }
 
 .nav-bar {
-  direction: rtl;
+  margin: -10px
 }
 .nav-bar li {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px;
   font-size: 17px;
 }
 .nav-bar li a {
@@ -33,4 +33,10 @@
 #logo {
   width: 88px;
   padding: 0px 20px;
+}
+#logo:hover {
+  background-color: white;
+  border-radius: 10px;
+  width: 40px ;
+  transition: ease 0.2s ;
 }
