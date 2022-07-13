@@ -13,6 +13,7 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
 import { VoteContainer } from "./containers/VoteContainer";
+import { CardListContainer } from "./containers/CardListContainer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -24,6 +25,7 @@ root.render(
           <Route index element={<HomeContainer />} />
           <Route path="features" element={<VoteContainer />} />
           <Route path="commands" element={<VoteContainer />} />
+          <Route path="cards" element={<CardListContainer />} />
           {/* <Route
             path="vote"
             element={<Navigate to={links.topgg} />}
